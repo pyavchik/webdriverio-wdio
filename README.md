@@ -3,7 +3,8 @@ How to use:
 git clone https://github.com/pyavchik/webdriverio-wdio.git
 cd webdriverio-wdio
 npm init -y
-npm install webdriverio
+npm install webdriverio --save-dev
+npm install wdio-selenium-standalone-service --save-dev
 node_modules/.bin/wdio
 ```
 Lets setup wdio: 
