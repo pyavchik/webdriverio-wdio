@@ -19,8 +19,18 @@ Lets setup wdio:
 ? In which directory should screenshots gets saved if a command fails? ./errorShots/: "Enter"<br>
 ? What is the base url? http://localhost: "Enter"<br>
 
+You need to add trueautomation to your service array:<br>
+// wdio.conf.js<br>
+```code
+export.config = {
+  // ...
+  services: ['selenium-standalone'],
+  // ...
+};
+```
+
 Finally lets start test:
 ```bash
-node_modules/.bin/wdio --path '/'
+node_modules/.bin/wdio wdio.conf.js
 ```
 
